@@ -2,6 +2,7 @@
   const LETTERS = ["a", "b", "c", "d"];
   const STORE_KEY = "amategeko-quiz-progress";
   const TIME_LIMIT = 60;    // seconds per question
+  const AUTO_NEXT_DELAY = 2000; // ms to show the answer after time runs out
 
   const $ = (id) => document.getElementById(id);
   const screens = { start: $("startScreen"), quiz: $("quizScreen"), result: $("resultScreen") };
@@ -68,8 +69,14 @@
     timerId = setInterval(() => {
       timeLeft--;
       renderTimer();
-      if (timeLeft <= 0) clearInterval(timerId);
+      if (timeLeft <= 0) timeUp();
     }, 1000);
+  }
+
+  // Time ran out: submit with no answer, show the correct one, then move on
+  function timeUp() {
+    choose(-1);
+    autoNextId = setTimeout(next, AUTO_NEXT_DELAY);
   }
 
   function imageEl(name) {
@@ -138,6 +145,7 @@
     startTimer();
   }
 
+  // i is the chosen option index, or -1 when time ran out
   function choose(i) {
     if (answered) return;
     answered = true;
@@ -163,7 +171,8 @@
       wrong.push(qi);
       const ans = q.o[q.a];
       fb.className = "feedback bad";
-      fb.textContent = `✘ Si byo. The correct answer is ${LETTERS[q.a]})` + (ans.t ? ` ${ans.t}` : " (see the highlighted option)");
+      const prefix = i === -1 ? "⏱ Time's up!" : "✘ Si byo.";
+      fb.textContent = `${prefix} The correct answer is ${LETTERS[q.a]})` + (ans.t ? ` ${ans.t}` : " (see the highlighted option)");
     }
 
     updateCounters();
