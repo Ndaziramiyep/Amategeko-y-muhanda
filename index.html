@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="rw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amategeko y'Umuhanda – Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Amategeko y'Umuhanda</h1>
+    <div class="stats">
+      <span class="pill correct-pill">✔ <b id="correctCount">0</b></span>
+      <span class="pill wrong-pill">✘ <b id="wrongCount">0</b></span>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Start screen -->
+    <section id="startScreen" class="card">
+      <h2>Ikizamini cy'amategeko y'umuhanda</h2>
+      <p class="muted"><span id="totalQuestions"></span> questions. Answer each one to see whether you got it right; if you didn't, the correct answer is shown. Then go to the next question.</p>
+      <label class="check"><input type="checkbox" id="shuffleToggle"> Shuffle question order</label>
+      <div class="actions">
+        <button id="startBtn" class="btn primary">Start</button>
+        <button id="resumeBtn" class="btn hidden">Resume (question <span id="resumeAt"></span>)</button>
+      </div>
+    </section>
+
+    <!-- Quiz screen -->
+    <section id="quizScreen" class="card hidden">
+      <div class="progress-row">
+        <span id="progressText"></span>
+        <span id="percentText" class="muted"></span>
+      </div>
+      <div class="progress"><div id="progressBar"></div></div>
+
+      <h2 id="questionText" class="question"></h2>
+      <div id="questionImages" class="q-images"></div>
+
+      <div id="options" class="options"></div>
+
+      <div id="feedback" class="feedback hidden"></div>
+
+      <div class="actions spread">
+        <button id="quitBtn" class="btn ghost">Finish</button>
+        <button id="nextBtn" class="btn primary" disabled>Next →</button>
+      </div>
+    </section>
+
+    <!-- Result screen -->
+    <section id="resultScreen" class="card hidden">
+      <h2>Results</h2>
+      <p class="score" id="scoreText"></p>
+      <p class="muted" id="scoreDetail"></p>
+      <div class="actions">
+        <button id="restartBtn" class="btn primary">Start again</button>
+        <button id="reviewWrongBtn" class="btn">Practice wrong answers</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox hidden"><img alt=""></div>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
