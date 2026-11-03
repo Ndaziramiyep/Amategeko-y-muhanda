@@ -25,11 +25,36 @@
   <main class="container">
     <!-- Start screen -->
     <section id="startScreen" class="card screen">
-      <h2>Ikizamini cy'amategeko y'umuhanda</h2>
-      <p class="muted"><span id="quizLength"></span> questions from a bank of <span id="totalQuestions"></span>, with <span id="timeLimit"></span> seconds for each. Answer each one to see whether you got it right; if you didn't, the correct answer is shown. If time runs out, the question is submitted as unanswered and the next one appears.</p>
-      <label class="check"><input type="checkbox" id="shuffleToggle" checked> Pick random questions</label>
+      <div class="hero">
+        <div class="hero-icon" aria-hidden="true">
+          <span class="light red"></span><span class="light amber"></span><span class="light green"></span>
+        </div>
+        <div>
+          <h2>Ikizamini cy'amategeko y'umuhanda</h2>
+          <p class="muted">Test your knowledge of Rwanda's traffic rules.</p>
+        </div>
+      </div>
+
+      <div class="chips">
+        <div class="chip"><b id="quizLength"></b><span>questions</span></div>
+        <div class="chip"><b id="timeLimit"></b><span>seconds each</span></div>
+        <div class="chip"><b id="totalQuestions"></b><span>in the bank</span></div>
+      </div>
+
+      <ul class="rules">
+        <li>Pick an answer to see right away whether you got it right. If you didn't, the correct answer is shown.</li>
+        <li>If time runs out, the question is submitted as unanswered and the next one appears.</li>
+        <li>Keyboard: <kbd>a</kbd>–<kbd>d</kbd> or <kbd>1</kbd>–<kbd>4</kbd> to answer, <kbd>Enter</kbd> for the next question.</li>
+      </ul>
+
+      <label class="switch">
+        <input type="checkbox" id="shuffleToggle" checked>
+        <span class="track"><span class="thumb"></span></span>
+        Pick random questions
+      </label>
+
       <div class="actions">
-        <button id="startBtn" class="btn primary">Start</button>
+        <button id="startBtn" class="btn primary big">Start quiz →</button>
         <button id="resumeBtn" class="btn hidden">Resume (question <span id="resumeAt"></span>)</button>
       </div>
     </section>
