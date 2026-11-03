@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amategeko y'Umuhanda – Quiz</title>
+  <title>Amategeko y'Umuhanda – Ikizamini</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -31,31 +31,32 @@
         </div>
         <div>
           <h2>Ikizamini cy'amategeko y'umuhanda</h2>
-          <p class="muted">Test your knowledge of Rwanda's traffic rules.</p>
+          <p class="muted">Gerageza ubumenyi bwawe ku mategeko y'umuhanda mu Rwanda.</p>
         </div>
       </div>
 
       <div class="chips">
-        <div class="chip"><b id="quizLength"></b><span>questions</span></div>
-        <div class="chip"><b id="timeLimit"></b><span>seconds each</span></div>
-        <div class="chip"><b id="totalQuestions"></b><span>in the bank</span></div>
+        <div class="chip"><b id="quizLength"></b><span>ibibazo</span></div>
+        <div class="chip"><b id="timeLimit"></b><span>amasegonda kuri buri kibazo</span></div>
+        <div class="chip"><b id="totalQuestions"></b><span>ibibazo byose bihari</span></div>
       </div>
 
       <ul class="rules">
-        <li>Pick an answer to see right away whether you got it right. If you didn't, the correct answer is shown.</li>
-        <li>If time runs out, the question is submitted as unanswered and the next one appears.</li>
-        <li>Keyboard: <kbd>a</kbd>–<kbd>d</kbd> or <kbd>1</kbd>–<kbd>4</kbd> to answer, <kbd>Enter</kbd> for the next question.</li>
+        <li>Hitamo igisubizo uhite umenya niba ari cyo. Niba atari cyo, urerekwa igisubizo nyacyo.</li>
+        <li>Iyo igihe kirangiye utarasubiza, ikibazo gifatwa nk'icyo utasubije, hanyuma hakaza igikurikiyeho.</li>
+        <li>Ikizamini kirangira ari uko usubije ibibazo byose uko ari <span id="quizLengthRule"></span>.</li>
+        <li>Kuri mudasobwa: kanda <kbd>a</kbd>–<kbd>d</kbd> cyangwa <kbd>1</kbd>–<kbd>4</kbd> usubize, na <kbd>Enter</kbd> ujye ku kibazo gikurikiyeho.</li>
       </ul>
 
       <label class="switch">
         <input type="checkbox" id="shuffleToggle" checked>
         <span class="track"><span class="thumb"></span></span>
-        Pick random questions
+        Hitamo ibibazo mu buryo butunguranye
       </label>
 
       <div class="actions">
-        <button id="startBtn" class="btn primary big">Start quiz →</button>
-        <button id="resumeBtn" class="btn hidden">Resume (question <span id="resumeAt"></span>)</button>
+        <button id="startBtn" class="btn primary big">Tangira ikizamini →</button>
+        <button id="resumeBtn" class="btn hidden">Komeza (ikibazo cya <span id="resumeAt"></span>)</button>
       </div>
     </section>
 

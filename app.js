@@ -298,6 +298,7 @@
 
   // Wire up
   $("quizLength").textContent = Math.min(QUIZ_LENGTH, QUESTIONS.length);
+  $("quizLengthRule").textContent = Math.min(QUIZ_LENGTH, QUESTIONS.length);
   $("timeLimit").textContent = TIME_LIMIT;
   $("totalQuestions").textContent = QUESTIONS.length;
 
