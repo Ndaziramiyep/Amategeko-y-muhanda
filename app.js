@@ -4,6 +4,7 @@
   const QUIZ_LENGTH = 20;   // questions per quiz
   const TIME_LIMIT = 60;    // seconds per question
   const AUTO_NEXT_DELAY = 2000; // ms to show the answer after time runs out
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   const $ = (id) => document.getElementById(id);
   const screens = { start: $("startScreen"), quiz: $("quizScreen"), result: $("resultScreen") };
@@ -20,7 +21,14 @@
   function show(name) {
     Object.values(screens).forEach((s) => s.classList.add("hidden"));
     screens[name].classList.remove("hidden");
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: reducedMotion ? "auto" : "smooth" });
+  }
+
+  // Restart a CSS animation class on an element
+  function replay(el, cls) {
+    el.classList.remove(cls);
+    void el.offsetWidth;
+    el.classList.add(cls);
   }
 
   function shuffle(arr) {
@@ -46,8 +54,11 @@
   }
 
   function updateCounters() {
-    $("correctCount").textContent = correct;
-    $("wrongCount").textContent = wrong.length;
+    const c = $("correctCount"), w = $("wrongCount");
+    if (c.textContent !== String(correct)) replay($("correctPill"), "bump");
+    if (w.textContent !== String(wrong.length)) replay($("wrongPill"), "bump");
+    c.textContent = correct;
+    w.textContent = wrong.length;
   }
 
   function renderTimer() {
@@ -108,10 +119,12 @@
     $("progressBar").style.width = `${(pos / order.length) * 100}%`;
 
     $("questionText").textContent = q.q;
+    replay($("questionText"), "enter");
 
     const imgs = $("questionImages");
     imgs.innerHTML = "";
     q.img.forEach((name) => imgs.appendChild(imageEl(name)));
+    replay(imgs, "enter");
 
     const opts = $("options");
     opts.innerHTML = "";
@@ -120,6 +133,7 @@
       btn.className = "option";
       btn.type = "button";
       btn.dataset.index = i;
+      btn.style.setProperty("--i", i);
 
       const letter = document.createElement("span");
       letter.className = "letter";
@@ -178,7 +192,7 @@
 
     updateCounters();
     $("nextBtn").disabled = false;
-    $("nextBtn").focus();
+    $("nextBtn").focus({ preventScroll: true });
     save(pos + 1);
   }
 
@@ -241,6 +255,7 @@
 
   // Keyboard: a-d / 1-4 to answer, Enter to go next
   document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") { $("lightbox").classList.add("hidden"); return; }
     if (screens.quiz.classList.contains("hidden")) return;
     const k = e.key.toLowerCase();
     const n = LETTERS.indexOf(k) !== -1 ? LETTERS.indexOf(k) : ["1", "2", "3", "4"].indexOf(k);

@@ -8,16 +8,23 @@
 </head>
 <body>
   <header class="topbar">
-    <h1>Amategeko y'Umuhanda</h1>
+    <div class="brand">
+      <svg class="brand-sign" viewBox="0 0 40 36" aria-hidden="true">
+        <path d="M20 2 L38 34 H2 Z" fill="#fff" stroke="#e8382b" stroke-width="4" stroke-linejoin="round"/>
+        <rect x="18" y="12" width="4" height="12" rx="2" fill="#1d2433"/>
+        <circle cx="20" cy="28.5" r="2.2" fill="#1d2433"/>
+      </svg>
+      <h1>Amategeko y'Umuhanda</h1>
+    </div>
     <div class="stats">
-      <span class="pill correct-pill">✔ <b id="correctCount">0</b></span>
-      <span class="pill wrong-pill">✘ <b id="wrongCount">0</b></span>
+      <span class="pill correct-pill" id="correctPill">✔ <b id="correctCount">0</b></span>
+      <span class="pill wrong-pill" id="wrongPill">✘ <b id="wrongCount">0</b></span>
     </div>
   </header>
 
   <main class="container">
     <!-- Start screen -->
-    <section id="startScreen" class="card">
+    <section id="startScreen" class="card screen">
       <h2>Ikizamini cy'amategeko y'umuhanda</h2>
       <p class="muted"><span id="quizLength"></span> questions from a bank of <span id="totalQuestions"></span>, with <span id="timeLimit"></span> seconds for each. Answer each one to see whether you got it right; if you didn't, the correct answer is shown. If time runs out, the question is submitted as unanswered and the next one appears.</p>
       <label class="check"><input type="checkbox" id="shuffleToggle" checked> Pick random questions</label>
@@ -28,7 +35,7 @@
     </section>
 
     <!-- Quiz screen -->
-    <section id="quizScreen" class="card hidden">
+    <section id="quizScreen" class="card screen hidden">
       <div class="progress-row">
         <span id="progressText"></span>
         <span id="percentText" class="muted"></span>
@@ -50,7 +57,7 @@
     </section>
 
     <!-- Result screen -->
-    <section id="resultScreen" class="card hidden">
+    <section id="resultScreen" class="card screen hidden">
       <h2>Results</h2>
       <p class="score" id="scoreText"></p>
       <p class="muted" id="scoreDetail"></p>
