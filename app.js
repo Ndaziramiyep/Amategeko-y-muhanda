@@ -166,4 +166,49 @@
     return $("shuffleToggle").checked ? shuffle(idx) : idx;
   }
 
+  // Wire up
+  $("totalQuestions").textContent = QUESTIONS.length;
+
+  const saved = load();
+  if (saved && Array.isArray(saved.order) && saved.pos < saved.order.length) {
+    $("resumeAt").textContent = saved.pos + 1;
+    $("resumeBtn").classList.remove("hidden");
+  }
+
+  $("startBtn").addEventListener("click", () => startRun(allIndexes()));
+  $("resumeBtn").addEventListener("click", () => {
+    order = saved.order;
+    pos = saved.pos;
+    correct = saved.correct;
+    wrong = saved.wrong;
+    updateCounters();
+    show("quiz");
+    renderQuestion();
+  });
+  $("nextBtn").addEventListener("click", next);
+  $("quitBtn").addEventListener("click", finish);
+  $("restartBtn").addEventListener("click", () => {
+    $("resumeBtn").classList.add("hidden");
+    show("start");
+  });
+  $("reviewWrongBtn").addEventListener("click", () => startRun(shuffle(wrong.slice())));
+
+  // Keyboard: a-d / 1-4 to answer, Enter to go next
+  document.addEventListener("keydown", (e) => {
+    if (screens.quiz.classList.contains("hidden")) return;
+    const k = e.key.toLowerCase();
+    const n = LETTERS.indexOf(k) !== -1 ? LETTERS.indexOf(k) : ["1", "2", "3", "4"].indexOf(k);
+    if (n !== -1 && !answered) choose(n);
+    else if (k === "enter" && answered) { e.preventDefault(); next(); }
+  });
+
+  // Click an image to enlarge it
+  const lightbox = $("lightbox");
+  document.addEventListener("click", (e) => {
+    if (e.target.matches(".q-images img")) {
+      lightbox.querySelector("img").src = e.target.src;
+      lightbox.classList.remove("hidden");
+    }
+  });
+  lightbox.addEventListener("click", () => lightbox.classList.add("hidden"));
 })();
