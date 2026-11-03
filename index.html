@@ -36,12 +36,23 @@
 
     <!-- Quiz screen -->
     <section id="quizScreen" class="card screen hidden">
-      <div class="progress-row">
-        <span id="progressText"></span>
-        <span id="percentText" class="muted"></span>
-        <span id="timerText" class="timer"></span>
+      <div class="quiz-head">
+        <div class="progress-info">
+          <div class="progress-row">
+            <span id="progressText"></span>
+            <span id="percentText" class="muted"></span>
+          </div>
+          <div class="progress"><div id="progressBar"></div></div>
+        </div>
+
+        <div id="timer" class="timer" role="timer" aria-label="Seconds left">
+          <svg viewBox="0 0 120 120" aria-hidden="true">
+            <circle class="timer-track" cx="60" cy="60" r="52"></circle>
+            <circle id="timerRing" class="timer-ring" cx="60" cy="60" r="52"></circle>
+          </svg>
+          <div class="timer-label"><b id="timerText">60</b><small>sec</small></div>
+        </div>
       </div>
-      <div class="progress"><div id="progressBar"></div></div>
 
       <h2 id="questionText" class="question"></h2>
       <div id="questionImages" class="q-images"></div>

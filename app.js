@@ -4,6 +4,7 @@
   const QUIZ_LENGTH = 20;   // questions per quiz
   const TIME_LIMIT = 60;    // seconds per question
   const AUTO_NEXT_DELAY = 2000; // ms to show the answer after time runs out
+  const TIMER_CIRCUMFERENCE = 2 * Math.PI * 52; // matches r="52" of #timerRing
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   const $ = (id) => document.getElementById(id);
@@ -62,9 +63,11 @@
   }
 
   function renderTimer() {
-    const el = $("timerText");
-    el.textContent = `⏱ ${timeLeft}s`;
-    el.classList.toggle("low", timeLeft <= 10);
+    const timer = $("timer");
+    $("timerText").textContent = timeLeft;
+    $("timerRing").style.strokeDashoffset = TIMER_CIRCUMFERENCE * (1 - timeLeft / TIME_LIMIT);
+    timer.classList.toggle("warn", timeLeft <= 20 && timeLeft > 10);
+    timer.classList.toggle("low", timeLeft <= 10);
   }
 
   function stopTimers() {
@@ -76,9 +79,13 @@
 
   function startTimer() {
     stopTimers();
+    const timer = $("timer");
+    timer.classList.remove("paused", "expired");
+    timer.classList.add("refill"); // sweep the ring back to full instead of ticking
     timeLeft = TIME_LIMIT;
     renderTimer();
     timerId = setInterval(() => {
+      timer.classList.remove("refill");
       timeLeft--;
       renderTimer();
       if (timeLeft <= 0) timeUp();
@@ -88,6 +95,7 @@
   // Time ran out: submit with no answer, show the correct one, then move on
   function timeUp() {
     choose(-1);
+    replay($("timer"), "expired");
     autoNextId = setTimeout(next, AUTO_NEXT_DELAY);
   }
 
@@ -165,6 +173,7 @@
     if (answered) return;
     answered = true;
     clearInterval(timerId);
+    $("timer").classList.add("paused");
 
     const qi = order[pos];
     const q = QUESTIONS[qi];
