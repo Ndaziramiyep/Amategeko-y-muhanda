@@ -104,3 +104,47 @@ body {
 .option.wrong .letter { background: var(--bad); color: #fff; }
 .option.dim { opacity: .55; }
 
+.feedback {
+  margin-top: 16px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.feedback.ok { background: var(--ok-bg); color: var(--ok); }
+.feedback.bad { background: var(--bad-bg); color: var(--bad); }
+
+.actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.actions.spread { justify-content: space-between; }
+
+.btn {
+  padding: 10px 20px;
+  font: inherit;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 2px solid var(--primary);
+  background: #fff;
+  color: var(--primary);
+  cursor: pointer;
+}
+.btn.primary { background: var(--primary); color: #fff; }
+.btn.primary:hover:not(:disabled) { background: var(--primary-dark); }
+.btn.ghost { border-color: var(--border); color: var(--muted); }
+.btn:disabled { opacity: .45; cursor: not-allowed; }
+
+.check { display: flex; align-items: center; gap: 8px; margin-top: 12px; }
+
+.score { font-size: 2rem; font-weight: 700; margin: 8px 0; }
+
+.lightbox {
+  position: fixed; inset: 0; z-index: 20;
+  display: grid; place-items: center;
+  background: rgba(0, 0, 0, .8);
+  cursor: zoom-out;
+}
+.lightbox img { max-width: 94vw; max-height: 90vh; border-radius: 8px; background: #fff; }
+
+@media (max-width: 520px) {
+  .card { padding: 16px; }
+  .question { font-size: 1.05rem; }
+  .topbar h1 { font-size: 1rem; }
+}
