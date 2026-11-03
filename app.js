@@ -5,6 +5,7 @@
   const TIME_LIMIT = 60;    // seconds per question
   const AUTO_NEXT_DELAY = 2000; // ms to show the answer after time runs out
   const TIMER_CIRCUMFERENCE = 2 * Math.PI * 52; // matches r="52" of #timerRing
+  const SCORE_CIRCUMFERENCE = 2 * Math.PI * 68; // matches r="68" of #scoreRing
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   const $ = (id) => document.getElementById(id);
@@ -14,6 +15,7 @@
   let pos = 0;         // position in `order`
   let correct = 0;
   let wrong = [];      // indexes of questions answered wrong
+  let timedOut = 0;    // how many of the wrong ones ran out of time
   let answered = false;
   let timeLeft = TIME_LIMIT;
   let timerId = null;
@@ -42,7 +44,7 @@
 
   function save(nextPos) {
     try {
-      localStorage.setItem(STORE_KEY, JSON.stringify({ order, pos: nextPos, correct, wrong }));
+      localStorage.setItem(STORE_KEY, JSON.stringify({ order, pos: nextPos, correct, wrong, timedOut }));
     } catch (e) { /* storage unavailable */ }
   }
 
@@ -94,6 +96,7 @@
 
   // Time ran out: submit with no answer, show the correct one, then move on
   function timeUp() {
+    timedOut++;
     choose(-1);
     replay($("timer"), "expired");
     autoNextId = setTimeout(next, AUTO_NEXT_DELAY);
@@ -112,6 +115,7 @@
     pos = 0;
     correct = 0;
     wrong = [];
+    timedOut = 0;
     updateCounters();
     show("quiz");
     renderQuestion();
@@ -213,18 +217,78 @@
     else renderQuestion();
   }
 
+  function resultTitle(pct) {
+    if (pct >= 90) return "Excellent! 🏆";
+    if (pct >= 70) return "Great job! 🎉";
+    if (pct >= 50) return "Good effort 👍";
+    return "Keep practicing 💪";
+  }
+
+  function scoreColor(pct) {
+    if (pct >= 70) return "var(--ok)";
+    if (pct >= 50) return "var(--warn)";
+    return "var(--bad)";
+  }
+
+  // Count a number up from 0 for a little drama on the results screen
+  function countUp(el, to, suffix) {
+    if (reducedMotion) { el.textContent = to + suffix; return; }
+    const start = performance.now();
+    const dur = 1200;
+    const step = (now) => {
+      const t = Math.min(1, (now - start) / dur);
+      const eased = 1 - Math.pow(1 - t, 3);
+      el.textContent = Math.round(to * eased) + suffix;
+      if (t < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+
+  function confetti() {
+    if (reducedMotion) return;
+    const box = $("confetti");
+    const colors = ["#1f5eff", "#12a150", "#f08c00", "#d92d20", "#8a5cff", "#ffd23f"];
+    for (let k = 0; k < 90; k++) {
+      const p = document.createElement("i");
+      p.style.left = Math.random() * 100 + "vw";
+      p.style.background = colors[k % colors.length];
+      p.style.animationDuration = 2.2 + Math.random() * 1.8 + "s";
+      p.style.animationDelay = Math.random() * .6 + "s";
+      p.style.setProperty("--dx", (Math.random() - .5) * 200 + "px");
+      p.style.setProperty("--rot", (Math.random() > .5 ? 1 : -1) * (360 + Math.random() * 720) + "deg");
+      box.appendChild(p);
+    }
+    setTimeout(() => { box.innerHTML = ""; }, 4800);
+  }
+
   function finish() {
     stopTimers();
     clearSaved();
     const total = correct + wrong.length;
     const pct = total ? Math.round((correct / total) * 100) : 0;
-    $("scoreText").textContent = `${correct} / ${total} (${pct}%)`;
+    $("scoreText").textContent = `${correct} / ${total}`;
+    $("resultTitle").textContent = resultTitle(pct);
     $("scoreDetail").textContent = total < order.length
-      ? `You answered ${total} of ${order.length} questions. Wrong answers: ${wrong.length}.`
-      : `Wrong answers: ${wrong.length}.`;
+      ? `You answered ${total} of ${order.length} questions.`
+      : `You answered all ${order.length} questions.`;
+    $("statCorrect").textContent = correct;
+    $("statWrong").textContent = wrong.length - timedOut;
+    $("statTimeout").textContent = timedOut;
     $("reviewWrongBtn").classList.toggle("hidden", wrong.length === 0);
     $("progressBar").style.width = "100%";
     show("result");
+
+    const ring = $("scoreRing");
+    ring.style.setProperty("--score-color", scoreColor(pct));
+    ring.style.transition = "none";
+    ring.style.strokeDashoffset = SCORE_CIRCUMFERENCE;
+    void ring.getBoundingClientRect();
+    ring.style.transition = "";
+    requestAnimationFrame(() => {
+      ring.style.strokeDashoffset = SCORE_CIRCUMFERENCE * (1 - pct / 100);
+    });
+    countUp($("scorePct"), pct, "%");
+    if (pct >= 70) confetti();
   }
 
   function allIndexes() {
@@ -250,6 +314,7 @@
     pos = saved.pos;
     correct = saved.correct;
     wrong = saved.wrong;
+    timedOut = saved.timedOut || 0;
     updateCounters();
     show("quiz");
     renderQuestion();

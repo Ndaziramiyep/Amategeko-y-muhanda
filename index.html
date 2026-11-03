@@ -94,10 +94,24 @@
 
     <!-- Result screen -->
     <section id="resultScreen" class="card screen hidden">
-      <h2>Results</h2>
-      <p class="score" id="scoreText"></p>
-      <p class="muted" id="scoreDetail"></p>
-      <div class="actions">
+      <div class="result-ring">
+        <svg viewBox="0 0 160 160" aria-hidden="true">
+          <circle class="score-track" cx="80" cy="80" r="68"></circle>
+          <circle id="scoreRing" class="score-ring" cx="80" cy="80" r="68"></circle>
+        </svg>
+        <div class="result-label"><b id="scorePct">0%</b><span id="scoreText"></span></div>
+      </div>
+
+      <h2 id="resultTitle" class="result-title"></h2>
+      <p class="muted center" id="scoreDetail"></p>
+
+      <div class="result-stats">
+        <div class="stat ok"><b id="statCorrect">0</b><span>Correct</span></div>
+        <div class="stat bad"><b id="statWrong">0</b><span>Wrong</span></div>
+        <div class="stat warn"><b id="statTimeout">0</b><span>Timed out</span></div>
+      </div>
+
+      <div class="actions center">
         <button id="restartBtn" class="btn primary">Start again</button>
         <button id="reviewWrongBtn" class="btn">Practice wrong answers</button>
       </div>
@@ -105,6 +119,7 @@
   </main>
 
   <div id="lightbox" class="lightbox hidden"><img alt=""></div>
+  <div id="confetti" class="confetti" aria-hidden="true"></div>
 
   <script src="questions.js"></script>
   <script src="app.js"></script>
