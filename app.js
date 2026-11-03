@@ -1,6 +1,7 @@
 (() => {
   const LETTERS = ["a", "b", "c", "d"];
   const STORE_KEY = "amategeko-quiz-progress";
+  const QUIZ_LENGTH = 20;   // questions per quiz
   const TIME_LIMIT = 60;    // seconds per question
   const AUTO_NEXT_DELAY = 2000; // ms to show the answer after time runs out
 
@@ -205,13 +206,14 @@
 
   function allIndexes() {
     const idx = QUESTIONS.map((_, i) => i);
-    return $("shuffleToggle").checked ? shuffle(idx) : idx;
+    return ($("shuffleToggle").checked ? shuffle(idx) : idx).slice(0, QUIZ_LENGTH);
   }
 
   // Wire up
   $("totalQuestions").textContent = QUESTIONS.length;
 
   const saved = load();
+  if (saved && Array.isArray(saved.order)) saved.order = saved.order.slice(0, QUIZ_LENGTH);
   if (saved && Array.isArray(saved.order) && saved.pos < saved.order.length) {
     $("resumeAt").textContent = saved.pos + 1;
     $("resumeBtn").classList.remove("hidden");
