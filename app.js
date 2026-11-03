@@ -218,10 +218,10 @@
   }
 
   function resultTitle(pct) {
-    if (pct >= 90) return "Excellent! 🏆";
-    if (pct >= 70) return "Great job! 🎉";
-    if (pct >= 50) return "Good effort 👍";
-    return "Keep practicing 💪";
+    if (pct >= 90) return "Indashyikirwa! 🏆";
+    if (pct >= 70) return "Wakoze neza cyane! 🎉";
+    if (pct >= 50) return "Wagerageje neza 👍";
+    return "Komeza witoze 💪";
   }
 
   function scoreColor(pct) {
@@ -269,8 +269,8 @@
     $("scoreText").textContent = `${correct} / ${total}`;
     $("resultTitle").textContent = resultTitle(pct);
     $("scoreDetail").textContent = total < order.length
-      ? `You answered ${total} of ${order.length} questions.`
-      : `You answered all ${order.length} questions.`;
+      ? `Wasubije ibibazo ${total} kuri ${order.length}.`
+      : `Wasubije ibibazo byose uko ari ${order.length}.`;
     $("statCorrect").textContent = correct;
     $("statWrong").textContent = wrong.length - timedOut;
     $("statTimeout").textContent = timedOut;
