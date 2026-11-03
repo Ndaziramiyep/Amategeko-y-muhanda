@@ -1,6 +1,7 @@
 (() => {
   const LETTERS = ["a", "b", "c", "d"];
   const STORE_KEY = "amategeko-quiz-progress";
+  const TIME_LIMIT = 60;    // seconds per question
 
   const $ = (id) => document.getElementById(id);
   const screens = { start: $("startScreen"), quiz: $("quizScreen"), result: $("resultScreen") };
@@ -10,6 +11,9 @@
   let correct = 0;
   let wrong = [];      // indexes of questions answered wrong
   let answered = false;
+  let timeLeft = TIME_LIMIT;
+  let timerId = null;
+  let autoNextId = null;
 
   function show(name) {
     Object.values(screens).forEach((s) => s.classList.add("hidden"));
@@ -42,6 +46,30 @@
   function updateCounters() {
     $("correctCount").textContent = correct;
     $("wrongCount").textContent = wrong.length;
+  }
+
+  function renderTimer() {
+    const el = $("timerText");
+    el.textContent = `⏱ ${timeLeft}s`;
+    el.classList.toggle("low", timeLeft <= 10);
+  }
+
+  function stopTimers() {
+    clearInterval(timerId);
+    clearTimeout(autoNextId);
+    timerId = null;
+    autoNextId = null;
+  }
+
+  function startTimer() {
+    stopTimers();
+    timeLeft = TIME_LIMIT;
+    renderTimer();
+    timerId = setInterval(() => {
+      timeLeft--;
+      renderTimer();
+      if (timeLeft <= 0) clearInterval(timerId);
+    }, 1000);
   }
 
   function imageEl(name) {
@@ -106,11 +134,14 @@
     const next = $("nextBtn");
     next.disabled = true;
     next.textContent = pos === order.length - 1 ? "See results" : "Next →";
+
+    startTimer();
   }
 
   function choose(i) {
     if (answered) return;
     answered = true;
+    clearInterval(timerId);
 
     const qi = order[pos];
     const q = QUESTIONS[qi];
@@ -143,12 +174,14 @@
 
   function next() {
     if (!answered) return;
+    stopTimers();
     pos++;
     if (pos >= order.length) finish();
     else renderQuestion();
   }
 
   function finish() {
+    stopTimers();
     clearSaved();
     const total = correct + wrong.length;
     const pct = total ? Math.round((correct / total) * 100) : 0;
