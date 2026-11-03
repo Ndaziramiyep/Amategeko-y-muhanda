@@ -53,7 +53,9 @@ body {
 .hidden { display: none !important; }
 .muted { color: var(--muted); }
 
-.progress-row { display: flex; justify-content: space-between; font-size: .95rem; }
+.progress-row { display: flex; justify-content: space-between; gap: 12px; font-size: .95rem; }
+.timer { font-weight: 700; font-variant-numeric: tabular-nums; }
+.timer.low { color: var(--bad); }
 .progress { height: 8px; background: var(--border); border-radius: 999px; margin: 8px 0 20px; overflow: hidden; }
 #progressBar { height: 100%; width: 0; background: var(--primary); transition: width .3s; }
 
