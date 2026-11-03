@@ -321,7 +321,6 @@
     renderQuestion();
   });
   $("nextBtn").addEventListener("click", next);
-  $("quitBtn").addEventListener("click", finish);
   $("restartBtn").addEventListener("click", () => {
     $("resumeBtn").classList.add("hidden");
     show("start");

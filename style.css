@@ -316,7 +316,7 @@ kbd {
 
 /* ---------- Buttons ---------- */
 .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
-.actions.spread { justify-content: space-between; }
+.actions.end { justify-content: flex-end; }
 
 .btn {
   padding: 10px 20px;
@@ -339,8 +339,6 @@ kbd {
 }
 .btn.primary:not(:disabled) { background-size: 200% 200%; }
 .btn.big { padding: 13px 28px; font-size: 1.05rem; }
-.btn.ghost { border-color: var(--border); color: var(--muted); }
-.btn.ghost:hover:not(:disabled) { box-shadow: none; border-color: var(--muted); }
 .btn:disabled { opacity: .45; cursor: not-allowed; }
 #nextBtn:not(:disabled) { animation: nudge 1.6s ease-in-out .6s infinite; }
 #nextBtn:not(:disabled):hover { animation: none; }
