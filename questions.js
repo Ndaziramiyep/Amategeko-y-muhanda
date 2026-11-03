@@ -7073,5 +7073,1177 @@ const QUESTIONS = [
 }
 ],
 "a": 1
+},
+{
+"q": "Umuyobozi w’ ikinyabiziga agendera inyuma y’ikindi kinyabizaga akaba adateganya kukinyuraho yakora iki ?",
+"img": [],
+"o": [
+{
+"t": "kuguma yicyo kinyabiziga hagati mu muhanda",
+"img": []
+},
+{
+"t": "kuguma inyuma yacyo kugirango yemerere ibindi binyabiziga gutambuka",
+"img": []
+},
+{
+"t": "gutwarira inyuma ye umwegereye cyane kugirango ureke ibindi binyabiziga bibanyureho",
+"img": []
+},
+{
+"t": "gutanga ibimenyetso kubindi binyabiziga ko byabanyuraho",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Niryari amatara ndanga cyerekezo agomba kugaragazwa kubandi bakoresha umuhanda ?",
+"img": [],
+"o": [
+{
+"t": "igihe gusa ari ngombwa amenyesha ibindi binyabiziga bimukurikiye",
+"img": []
+},
+{
+"t": "igihe gusa aringombwa kuburira abandi bayobozi bava mukindi cyerekezo",
+"img": []
+},
+{
+"t": "mugihe gikwiye ushaka kumenyesha abandi bakoresha umuhanda icyo ugiye gukora",
+"img": []
+},
+{
+"t": "keretse ahari ibimenyetso byo mu muhanda byerekana icyerekezo cyawe",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Gutinda gutanga ibimenyetso ku muyobozi w’ikinyabiziga ni gute bibangamira abandi bakoresha umuhanda ?",
+"img": [],
+"o": [
+{
+"t": "bigira ingaruka gusa kubaturuka mukindi cyerekezo",
+"img": []
+},
+{
+"t": "bishobora gutuma batabona igihe gihagije cyo gushyira mubikorwa icyo amenyeshejwe",
+"img": []
+},
+{
+"t": "baba bafite igihe gihagije cyo gushyira mu bikorwa ibyo bamyeshejwe",
+"img": []
+},
+{
+"t": "ntacy bibabangamiraho",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Ni ubuhe buryo bwiza bwakurikizwa igihe hari umuntu wakomerekeye mu mpanuka yo mu muhanda ?",
+"img": [],
+"o": [
+{
+"t": "Ku mushyira kunkengero y’umuhanda",
+"img": []
+},
+{
+"t": "Kutamukuramo keretse mugihe hari ibyago byaterwa n’inkogi y’umuriro cyangwa akaba ashobora kugongwa n’ikindi kinyabiziga no guhamagara ababishinzwe",
+"img": []
+},
+{
+"t": "Gusaba uwakomeretse kunyeganyeza ibice by’umubiri kugirano umenye aho ibikomere bye bigarukira",
+"img": []
+},
+{
+"t": "Guhumuriza uwakometse ukamuha ikinyobwo gikonje",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Niki umuyobozi w’ikinyabiziga yakora igihe agize uruhare mu mpanuka yo mu muhanda , aho ntawakometese ariko ibinyabiziga bikaba byateza icyago cyangwa byafunze umuhanda ?",
+"img": [],
+"o": [
+{
+"t": "Gushushanya aho zagonganiye no kuzishyira kuruhande",
+"img": []
+},
+{
+"t": "Gukuramo abagenze ugashyiraho icyapa cya mpandeshatu girukura kumodoka",
+"img": []
+},
+{
+"t": "Gutegereza ko abapolisi bahagera mbere yo gukura ibinyabiziga mu muhanda",
+"img": []
+},
+{
+"t": "Guhagarika ibindi binyabiziga kugeza ikibazo gikemutse mukabona kubikura mu muhanda",
+"img": []
+}
+],
+"a": 0
+},
+{
+"q": "Igihe umuyobozi w’ikinyabiziga agendera munzira y’icyerekezo kimwe akifuza gukata ibumoso yakora iki?",
+"img": [],
+"o": [
+{
+"t": "gutwara yegera umurongo wo hagati mu muhanda yerekeza ibumoso",
+"img": []
+},
+{
+"t": "gutwara yegera uruhande rw’iburyo bw’umuhanda",
+"img": []
+},
+{
+"t": "gutwara yegera ku uruhande rw’ibumoso bw’umuhanda",
+"img": []
+},
+{
+"t": "Gutwarira hafi y’umurongo ugabanya umuhanda mo kabili",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Umuyobozi w’ikinyabizaga uri kugendera mu muhanda w’ibyerekezo bibiri nuruhe ruhande rw’umuhanda agomba gukoresha ?",
+"img": [],
+"o": [
+{
+"t": "uruhande rw’ibumoso bw’umuhanda uretse igihe atawaye imashini zihinga cyangwa zikoreshwa indi mirimo",
+"img": []
+},
+{
+"t": "Mu gice cy;umuhanda yumva ashaka",
+"img": []
+},
+{
+"t": "Mu gice cy’iburyo bw’umuhanda uretse igihe ashaka kunyuranaho cyangwa gukata ibumoso",
+"img": []
+},
+{
+"t": "Ku ruhande rw’ibumoso bw’umuhanda",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Igihe umuyobozi w’ikinyabiziga atwaye mu muhanda urombereje w’ibice byinshi agomba kugendera mu kihe gice cy’umuhanda ?",
+"img": [],
+"o": [
+{
+"t": "Kugendera mugice icyo aricyo cyose kirimo ibinyabiziga bike",
+"img": []
+},
+{
+"t": "Kugendera kugice cy’ibumoso keretse ushaka gusohokera iburyo",
+"img": []
+},
+{
+"t": "Kugendera mu gice cy’iburyo bw’umuhanda keretse ushaka kunyuranaho",
+"img": []
+},
+{
+"t": "Ntagutwarira mu ruhande rw’iburyo bw’umuhanda kuko hagenewe imodoka ziremereye n’imodoka nini zitwara abantu.",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Umuyobozi w’ikinyabiziga yakora iki igihe ageze aho banyura bazenguruka?",
+"img": [],
+"o": [
+{
+"t": "Tanga inzira ku binyabiziga byamaze kwinjira aho banyura bazunguruka",
+"img": []
+},
+{
+"t": "Tanga inzira kubinyabiziga biremereye gusa",
+"img": []
+},
+{
+"t": "Tanga inzira gusa niba uri munzira ya kabiri niya gatatu isohoka",
+"img": []
+},
+{
+"t": "Komeza kuko abandi bayobozi b’ibinyabiziga bagomba kuguha inzira yo gukomeza",
+"img": []
+}
+],
+"a": 0
+},
+{
+"q": "Ni kihe cyerekezo umuyobozi w’ikinyabiziga yinjiriramo iyo ageze aho banyura bazenguruka ?",
+"img": [],
+"o": [
+{
+"t": "ibumoso",
+"img": []
+},
+{
+"t": "ibumoso gusa igihe ayobowe ni kimenyetso kimurika",
+"img": []
+},
+{
+"t": "iburyo cyangwa ibumoso",
+"img": []
+},
+{
+"t": "iburyo",
+"img": []
+}
+],
+"a": 3
+},
+{
+"q": "Mbere yuko umuyobozi w’ikinyabiziga akata ibumoso mu nzira nyabagendwa, nihe ikinyabiziga kigomba kuba kiri ?",
+"img": [
+"image87.png"
+],
+"o": [
+{
+"t": "Mu ruhande rw’iburyo bw’inzira nyabagendwa",
+"img": []
+},
+{
+"t": "Gusa iburyo bwo hagati y’inzira nyabagendwa",
+"img": []
+},
+{
+"t": "Muruhande urwarirwo rwo hagati mu nzira nyabagendwa",
+"img": []
+},
+{
+"t": "Mu ruhande rw’ibumoso bw’inzira nyabagendwa",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Umuyobozi w’ikinyabiziga yakwitondera iki mbere yuko y’injira munzira banyuramo bazengurutse ?",
+"img": [],
+"o": [
+{
+"t": "ibinyabiziga bimuturuka inyuma umuvuduko bifite n’uburyo bimwegereye",
+"img": []
+},
+{
+"t": "ibinyabiziga biturutse ibumoso bwe n’umuvuduko bifite n’intera iri hagati ye nabyo",
+"img": []
+},
+{
+"t": "ibinyabiziga biturutse iburyo n’umuvuduko bifite ni intera iri hagati ye nabyo",
+"img": []
+},
+{
+"t": "ibinyabiziga bimututse imbere , umuvuduko bifite n’intera iri hagati ye nabyo",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Umuyobozi w’ikinyabiziga ugendera inyuma y’ikinyabaziga gitwara abagenzi gihagaze gikuramo cyangwa gishyiramo abagenzi agomba :",
+"img": [],
+"o": [
+{
+"t": "kunyuranaho ibumoso",
+"img": []
+},
+{
+"t": "gutegereza yihanganye",
+"img": []
+},
+{
+"t": "a na b ni ibisubizo by’ukuri",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 0
+},
+{
+"q": "Igihe ubonye icyapa kigaragaza ishuli wakora iki?",
+"img": [],
+"o": [
+{
+"t": "kugabanya umuvuduko no gukomeza witonze",
+"img": []
+},
+{
+"t": "gukomeza n’umuvuduko uri hejuru kuko umunyeshuli agomba gutegereza",
+"img": []
+},
+{
+"t": "kuvuza ihoni",
+"img": []
+},
+{
+"t": "ibisubizo byose ni ukuri",
+"img": []
+}
+],
+"a": 0
+},
+{
+"q": "Umubare w’abagenzi bemewe gutwarwa mukinyabiziga wanditswe mu :",
+"img": [],
+"o": [
+{
+"t": "icyemezo cy’iyandikwa ry’ikinyabiziga",
+"img": []
+},
+{
+"t": "inyemezabwishyu y’umusoro",
+"img": []
+},
+{
+"t": "ubwishingizi",
+"img": []
+},
+{
+"t": "ibisubizo byose ni ukuri",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Gutwara ikinyabiziga wasinze:",
+"img": [],
+"o": [
+{
+"t": "biremewe kubinyabiziga byabikorera kugiti cyabo",
+"img": []
+},
+{
+"t": "biremewe nijoro",
+"img": []
+},
+{
+"t": "birabujijwe ku binyabiziga byose bifite moteri",
+"img": []
+},
+{
+"t": "ibisubizo byose nibyo",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Umuyobozi w’ikinyabizaga ashobora kunyuranaho:",
+"img": [],
+"o": [
+{
+"t": "ahamanuka",
+"img": []
+},
+{
+"t": "igihe umuhanda ari mugari",
+"img": []
+},
+{
+"t": "igihe umuyobozi w’ikinyabiziga kiri imbere ye amweretse ikimenyetso kimwemerera kunyuranaho",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Ugeze ahari inzira yabanyamaguru barindiriye kwambuka. Ntibatangiye kwambuka , wakora iki?",
+"img": [],
+"o": [
+{
+"t": "kuvuza ihoni",
+"img": []
+},
+{
+"t": "kwihangana ugatagereza",
+"img": []
+},
+{
+"t": "gukomeza",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Igihe utwaye umuntu mu kinyabiziga cyawe, akibagirwa kwambara umukandara wo kwirinda ibyago ugomba:",
+"img": [],
+"o": [
+{
+"t": "gukuramo umukandara wo kwirinda ibyago wambaye mukawambara mwembi",
+"img": []
+},
+{
+"t": "kubyerengagiza wizeyeko nta mpanuka muri bukore",
+"img": []
+},
+{
+"t": "funga cyane umukandara wo kwirinda ibyago wawe",
+"img": []
+},
+{
+"t": "Kubibutsa kwambara umukandara wo kwirinda ibyago",
+"img": []
+}
+],
+"a": 3
+},
+{
+"q": "Igihe za otobisi zigenewe gutwara banyeshuli zihagaze kugirango zibafate cyangwa bavemo ugomba :",
+"img": [],
+"o": [
+{
+"t": "kuvuza ihoni ugakomeza",
+"img": []
+},
+{
+"t": "gukomeza ugabanyije umuvuduko n’ubwitonzi kuko bishoboka ko abanyeshuli bakwambuka bitunguranye",
+"img": []
+},
+{
+"t": "nta bwitonzi budasnzwe bukenewe",
+"img": []
+},
+{
+"t": "ibisubizo byose ni ukuri",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Igihe imodoka iparitse ku nkengero z’umuhanda mugihe cy’ ijoro :",
+"img": [],
+"o": [
+{
+"t": "Imodoka igomba kuba ifunze",
+"img": []
+},
+{
+"t": "Umuntu ufite uruhushya rwo gutwara ikinyabiziga agomba kuba yicaye mu mwanya w’umuyobozi",
+"img": []
+},
+{
+"t": "Amatara yo guhagarara umwanya munini aguma yaka",
+"img": []
+},
+{
+"t": "Ibisubizo byose ni ukuri",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Mu gihe hari undi muyobozi w’ikinyabiziga ugukurikiye watangiye kukunyuraho :",
+"img": [],
+"o": [
+{
+"t": "Ntugomba kugira undi muyobozi w’ikinyabiziga unyuraho",
+"img": []
+},
+{
+"t": "Ugomba kunyura ku kindi kinyabiziga",
+"img": []
+},
+{
+"t": "Ugomba kunyura kukindi kinyabiziga uvugije ihoni",
+"img": []
+},
+{
+"t": "Nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 0
+},
+{
+"q": "Utwaye ikinyabiziga mu muhanda ufite ibyerekezo bibiri .ikinyabiziga imbere yawe cyiragenda buhoro, imbere yawe umuhanda nta kibazo kunyuranaho, ugomba :",
+"img": [],
+"o": [
+{
+"t": "kucyinyuraho bikorewe ibumoso",
+"img": []
+},
+{
+"t": "kucyinyuraho bikorewe iburyo",
+"img": []
+},
+{
+"t": "kucyinyuraho ukoresheje uruhande urwo arirwo rwose",
+"img": []
+},
+{
+"t": "ibisubizo byose ni ukuri",
+"img": []
+}
+],
+"a": 0
+},
+{
+"q": "Ibice by’umuhanda byera bigari biteganye n’umurongo ugabanya umuhanda mo ,kabiri bisobanura:",
+"img": [],
+"o": [
+{
+"t": "guhagara kw’ikinyabiziga",
+"img": []
+},
+{
+"t": "aho abanyamaguru bambukira",
+"img": []
+},
+{
+"t": "guha ubushobozi binyabiziga",
+"img": []
+},
+{
+"t": "ibisubizo byose ni ukuri",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Uturebanyuma dukoreshwa:",
+"img": [],
+"o": [
+{
+"t": "kwireba",
+"img": []
+},
+{
+"t": "kugenzura ibigendera mu muhanda inyuma",
+"img": []
+},
+{
+"t": "kureba abicaye inyuma",
+"img": []
+},
+{
+"t": "ntagisubizo cy’ukuri",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Kuki abanyamaguru batemerewe kwambuka umuhanda mw’ikoni cyangwa hafi y’imodoka ihagaze?",
+"img": [],
+"o": [
+{
+"t": "ingaruka kubindi binyabiziga",
+"img": []
+},
+{
+"t": "ingaruka kubandi bakoresha umuhanda",
+"img": []
+},
+{
+"t": "Abandi bayobozi bi binyabiziga baza bashobora kutabona abambuka umuhanda",
+"img": []
+},
+{
+"t": "Ibisubizo byose ni ukuri",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Kunyuranaho mw’ikoni :",
+"img": [],
+"o": [
+{
+"t": "biremewe",
+"img": []
+},
+{
+"t": "ntibyemewe",
+"img": []
+},
+{
+"t": "biremewe ukoranye ubwitonzi",
+"img": []
+},
+{
+"t": "ibisubizo byose ni ukuri",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Umuyobozi w’ikinyabiziga igihe atwaye ikinyabiziga akagira umunaniro utuma yasinzira yakora iki ?",
+"img": [],
+"o": [
+{
+"t": "Gufungura ikirahure cy’ikinyabiziga cyangwa gushyira ubukonje mu modoka kugirango umwuka mwiza winjire mu kinyabiziga",
+"img": []
+},
+{
+"t": "Guhagarara akaruhuka harimo no kugendagenda niba bishoboka",
+"img": []
+},
+{
+"t": "Kunanura amaboko no gufunga amaso mugihe gito",
+"img": []
+},
+{
+"t": "Kongera ubushyuhe mu kinyabiziga",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Niki umuyobozi w’ikinyabiziga yakora igihe atwaye ikinyabiziga mugihe cy’ibihu,imvura nyinshi, umwuzure cyangwa umukungugu mwinshi ?",
+"img": [],
+"o": [
+{
+"t": "Kugendera mu tuyira turi kumpande zu muhanda, ucunga ibimenyetso bigarura urumuri",
+"img": []
+},
+{
+"t": "Kugabanya umuvuduko hanyuma ugakoresha amatara magufi",
+"img": []
+},
+{
+"t": "Gucana amatara maremare hanyuma ukagenda gahoro",
+"img": []
+},
+{
+"t": "Kugendera mu murongo ugabanya umuhanda mo kabiri unareba ibimenyestso by’umuhanda bigarura urumuri",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Muri ibi byapa ni ubuhe bwoko bw’ibyapa bitegeka byo mu muhanda?",
+"img": [],
+"o": [
+{
+"t": "ibiri mw’ishusho y’urukiramende n’umuzenguruko w’umuhondo",
+"img": []
+},
+{
+"t": "ibiri mw’ishusho ya mpande eshatu mu n’uzenguruko mw’ibara ry’ubururu",
+"img": []
+},
+{
+"t": "ibiri mw’ishusho y’uruziga n’umuzenguruko mw’ibara ry’umutuku",
+"img": []
+},
+{
+"t": "ibiri mw’ishusho ya mpande enye zingana mubuso bw’umukara",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Ugeze mu masangano y’umuhanda aho usanga ibimenyetso bimurika bidakora, wakora iki igihe umukozi ubifiye ububasha aguhaye iki kimenyesto ?",
+"img": [
+"image88.jpeg"
+],
+"o": [
+{
+"t": "gukata ibumoso gusa",
+"img": []
+},
+{
+"t": "gukata iburyo gusa ugakomeza imbere",
+"img": []
+},
+{
+"t": "Guhagarara kumurongo wo guhagarara umwanya moto",
+"img": []
+},
+{
+"t": "komeza imbere gusa",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Amatara ndangacyerekezo agomba kugaragara nijoro igihe ijuru rikeye mu ntera nibura ya:",
+"img": [],
+"o": [
+{
+"t": "m 100",
+"img": []
+},
+{
+"t": "m 200",
+"img": []
+},
+{
+"t": "m150",
+"img": []
+},
+{
+"t": "m250",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Umurongo ucagaguye uvuga ko buri muyobozi abujijwe kuwurenga uretse mu gihe:",
+"img": [],
+"o": [
+{
+"t": "Agomba kunyura ku kindi kinyabiziga",
+"img": []
+},
+{
+"t": "Gukatira ibumoso",
+"img": []
+},
+{
+"t": "Guhindukira cyangwa kujya mukindi gice cy’umuhanda",
+"img": []
+},
+{
+"t": "Ibi bisubizo byose nibyo",
+"img": []
+}
+],
+"a": 3
+},
+{
+"q": "Igice cy’inzira nyabagendwa kigarukira kumirongo ibiri yera icagaguye ibangikanye kandi gifite ubugari budahagije kugirango imodoka zitambuke neza kiba ari:",
+"img": [],
+"o": [
+{
+"t": "Inzira y’abanyamaguru",
+"img": []
+},
+{
+"t": "Agahanda k’amagare",
+"img": []
+},
+{
+"t": "a na b byose ni ukuri",
+"img": []
+},
+{
+"t": "Nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Icyapa kimenyesha kugendera mu muhanda ubisikanirwamo gifite:",
+"img": [],
+"o": [
+{
+"t": "Ishusho y’uruziga mw’ibara ritukura, ubuso bwera n’ikirango cy’umukara",
+"img": []
+},
+{
+"t": "Ishusho ya mpandeshatu mw’ibara ritukura, ubuso bwera n’ikirango cy’umukara",
+"img": []
+},
+{
+"t": "Ishusho ya mpandeshatu mw’ibara ritukura, ubuso bw’ubururu n’ikirango cy’umukara",
+"img": []
+},
+{
+"t": "Ishusho y’uruziga mw’ibara ritukura, ubuso bw’ubururu n’ikirango cy’umukara",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Ikinyabiziga kigendeshwa na moteri n’ikinyabiziga gikururwa n’inyamaswa ntibishobora gukurura :",
+"img": [],
+"o": [
+{
+"t": "Ibinyabiziga birenze kimwe",
+"img": []
+},
+{
+"t": "Ibinyabiziga bipakiye birenze bibiri",
+"img": []
+},
+{
+"t": "Ibinyabiziga birenze bibiri",
+"img": []
+},
+{
+"t": "b na c ni byo",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Iki cyapa kivuga:",
+"img": [
+"image89.gif"
+],
+"o": [
+{
+"t": "Aho imihanda ihurira",
+"img": []
+},
+{
+"t": "inkomane y’aho umuhanda umwe urasukira iburyo",
+"img": []
+},
+{
+"t": "a na b ni ibisubizo by’ukuri",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 3
+},
+{
+"q": "Iki cyapa gisobanura ibi bikurikira:",
+"img": [
+"image90.gif"
+],
+"o": [
+{
+"t": "birabujijwe kunyura ku kindi kinyabiziga",
+"img": []
+},
+{
+"t": "gutambuka mbere kw’ibinyabiziga bituruka aho ujya",
+"img": []
+},
+{
+"t": "a na b ni ibisubizo by’ukuri",
+"img": []
+},
+{
+"t": "nta gisubizo cyukuri kirimo",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Utugarurarumuri turi ku ruhande rw’imbere rw’ikinyabiziga tugomba gusa:",
+"img": [],
+"o": [
+{
+"t": "n’umuhondo",
+"img": []
+},
+{
+"t": "n’umutuku",
+"img": []
+},
+{
+"t": "n’umweru",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Iki cyapa kivuga:",
+"img": [
+"image91.gif"
+],
+"o": [
+{
+"t": "iherezo ryo gutambuka mbere",
+"img": []
+},
+{
+"t": "gutambuka mbere kw’ibinyabiziga biturutse imbere aho ujya",
+"img": []
+},
+{
+"t": "gutambuka mbere y’ibinyabiziga biturutse imbere",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Iki cyapa kigizwe:",
+"img": [
+"image92.png"
+],
+"o": [
+{
+"t": "ishusho mpandeshatu ,ubuso ubururu",
+"img": []
+},
+{
+"t": "ishusho mpandeshatu,ubuso umukara",
+"img": []
+},
+{
+"t": "ishusho mpandeshatu,ubuso umweru",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Iki cyapa kivuga:",
+"img": [
+"image93.gif"
+],
+"o": [
+{
+"t": "ifungana ry’umuhanda iburyo",
+"img": []
+},
+{
+"t": "ifungana ry’umuhanda w’akayira gasatira umuhanda ibumoso",
+"img": []
+},
+{
+"t": "akayira gato",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Umuyobozi ubonye ko hari undi umukurikiye ashaka kumunyuraho agomba kubahiriza ibi bikurikira :",
+"img": [],
+"o": [
+{
+"t": "kwegera i ruhande rw’iburyo bw’umuhanda",
+"img": []
+},
+{
+"t": "kongera umuvuduko",
+"img": []
+},
+{
+"t": "guhagarara",
+"img": []
+},
+{
+"t": "a na c ni byo bisubizo by’ukuri",
+"img": []
+}
+],
+"a": 0
+},
+{
+"q": "Iki cyapa cyerekana :",
+"img": [
+"image94.gif"
+],
+"o": [
+{
+"t": "ifungana ry’umuhanda",
+"img": []
+},
+{
+"t": "ifungana ry’umuhanda n’akayira gasatira umuhanda i bumoso",
+"img": []
+},
+{
+"t": "umuhanda utaringaniye",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 3
+},
+{
+"q": "Icyi cyapa gisobanura :",
+"img": [
+"image95.gif"
+],
+"o": [
+{
+"t": "ntihanyurwa mu byerekezo byombi",
+"img": []
+},
+{
+"t": "ntihanyurwa n’abandi uretse abahatuye",
+"img": []
+},
+{
+"t": "hanyurwa mu cyerekezo kimwe gusa",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 0
+},
+{
+"q": "Icyi cyapa cyerekana :",
+"img": [
+"image96.gif"
+],
+"o": [
+{
+"t": "Ifungana ry’umuhanda",
+"img": []
+},
+{
+"t": "umuhanda unyerera",
+"img": []
+},
+{
+"t": "umuhanda utaringaniye",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 3
+},
+{
+"q": "Iki cyapa kivuga:",
+"img": [
+"image97.gif"
+],
+"o": [
+{
+"t": "ikoni iburyo",
+"img": []
+},
+{
+"t": "akazamuko gashinze cyane",
+"img": []
+},
+{
+"t": "akamanuko gashobora gutera ibyago",
+"img": []
+},
+{
+"t": "b na c byose ni ukuri",
+"img": []
+}
+],
+"a": 0
+},
+{
+"q": "Iyo umuhanda ugabanijemo ibisate bibiri kandi ugendwamo mu byerekezo byombi umuyobozi abujijwe :",
+"img": [],
+"o": [
+{
+"t": "kugendera mu gisate cy’iburyo",
+"img": []
+},
+{
+"t": "kunyuranaho",
+"img": []
+},
+{
+"t": "kugendera mu gisate cy’ibumoso",
+"img": []
+},
+{
+"t": "ibisubizo byose ni byo",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Icyapa kimenyesha kugendera mu muhanda ubisikanirwamo gifite:",
+"img": [],
+"o": [
+{
+"t": "Ishusho y’uruziga mw’ibara ritukura, ubuso bwera n’ikirango cy’umukara",
+"img": []
+},
+{
+"t": "Ishusho ya mpandeshatu mw’ibara ritukura, ubuso bwera n’ikirango cy’umukara",
+"img": []
+},
+{
+"t": "Ishusho ya mpandeshatu mw’ibara ritukura, ubuso bw’ubururu n’ikirango cy’umukara",
+"img": []
+},
+{
+"t": "Ishusho y’uruziga mw’ibara ritukura, ubuso bw’ubururu n’ikirango cy’umukara",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Icyapa cyerekana inzira y’amatungo itegetswe giteye:",
+"img": [],
+"o": [
+{
+"t": "Uruziga mubuso bw’ubururu, ishusho y’inka mu ibara ry’umukara",
+"img": []
+},
+{
+"t": "Uruziga mu ibara ryera, ishusho y’inka mwibara ry’ubururu",
+"img": []
+},
+{
+"t": "Uruziga mu buso bw’ibara ry’ubururu, ishusho y’inka mu ibara ryera n’ikirango cy’umukara",
+"img": []
+},
+{
+"t": "mpande eshatu mu buso bw’ibara ry’umweru n’ishusho y’inka mu ibara ry’umukara",
+"img": []
+}
+],
+"a": 3
 }
 ];
