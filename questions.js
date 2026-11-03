@@ -1149,5 +1149,1155 @@ const QUESTIONS = [
 }
 ],
 "a": 2
+},
+{
+"q": "Ahari hejuru cyane y’ubuso bumurika h’amatara ndangambere na ndanganyuma ntihashobora kuba aharenze ibipimo bikurikira hejuru y’ubutaka iyo ikinyabiziga kidapakiye:",
+"img": [],
+"o": [
+{
+"t": "m1 na cm 50",
+"img": []
+},
+{
+"t": "m1 na cm 75",
+"img": []
+},
+{
+"t": "m 1 na cm 90",
+"img": []
+},
+{
+"t": "m2 na cm 10",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Ni ryari ikinyabiziga gishobora kugenda mu muhanda moteri itaka cyangwa vitesi idakora:",
+"img": [],
+"o": [
+{
+"t": "igihe kigenda ahamanuka",
+"img": []
+},
+{
+"t": "igihe gikuruwe n’ikindi kinyabiziga",
+"img": []
+},
+{
+"t": "igihe gifite feri y’urugendo",
+"img": []
+},
+{
+"t": "ibisubizo byose ni byo",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Umurongo mugari wera udacagaguye ushobora gucibwa ku muhanda kugirango ugaragaze ibi bikurikira:",
+"img": [],
+"o": [
+{
+"t": "inkombe mpimbano z’umuhanda",
+"img": []
+},
+{
+"t": "ahahagararwa umwanya muto n’umunini",
+"img": []
+},
+{
+"t": "ahanyura abayobozi b’amagare",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 0
+},
+{
+"q": "Buri modoka cyangwa buri romoruki ikuruwe n’iyo modoka bishobora kugira itara risa n’icyatsi kibisi bituma umuyobozi yerekana ko yabonye ikimenyetso cy’uwitegura kumunyuraho. Iryo tara rigomba gushyirwa aha hakurikira:",
+"img": [],
+"o": [
+{
+"t": "hafi y’inguni y’ibumoso bw’ikinyabiziga",
+"img": []
+},
+{
+"t": "inyuma hafi y’impera y’iburyo bw’ikinyabiziga",
+"img": []
+},
+{
+"t": "inyuma ahegereye inguni y’iburyo",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 3
+},
+{
+"q": "Ibinyabiziga bikurikira bigomba kugira icyerekana umuvuduko kiri aho umuyobozi areba neza kandi kigahora kitabwaho kugirango kigume gukora neza:",
+"img": [],
+"o": [
+{
+"t": "ibinyabiziga bifite umuvuduko nibura wa km 60 mu isaha",
+"img": []
+},
+{
+"t": "ibinyabiziga bishobora kurenza km 40 mu isaha",
+"img": []
+},
+{
+"t": "ibinyabiziga bishobora kurenza km 30 mu isaha",
+"img": []
+},
+{
+"t": "ibinyabiziga bishobora kurenza km 25 mu isaha",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Ubugari bw’imizigo yikorewe n’ipikipiki idafite akanyabiziga ko kuruhande kimwe n’ubwa romoruki ikuruwe na bene icyo kinyabiziga ntibushobora kurenza ibipimo bikurikira:",
+"img": [],
+"o": [
+{
+"t": "m 1.25",
+"img": []
+},
+{
+"t": "cm 30",
+"img": []
+},
+{
+"t": "cm 75",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 0
+},
+{
+"q": "Ibinyabiziga bikurikira bigomba kugira itara ry’ubururu rimyatsa riboneka mu mpande zose:",
+"img": [],
+"o": [
+{
+"t": "ibinyabiziga bifite ubugari burenga m 2 na cm 10",
+"img": []
+},
+{
+"t": "ibinyabiziga bya police y’igihugu",
+"img": []
+},
+{
+"t": "ibinyabiziga ndakumirwa",
+"img": []
+},
+{
+"t": "ibisubizo byose ni ukuri",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Ibinyabiziga bihinga n’ibindi bikoresho byihariye bikoreshwa n’ibigo bipatana imirimo, iyo bigenda mu nzira nyabagendwa igihe cya nijoro cyangwa bitewe n’uko ibihe bimeze bitagishoboka kubona neza muri m 200 bishobora kugaragazwa inyuma n’amatara 2 atukura, bipfa kuba bitarenza ibipimo bikurikira:",
+"img": [],
+"o": [
+{
+"t": "kutarenza umuvuduko wa km20 mu isaha",
+"img": []
+},
+{
+"t": "uburebure bwabyo habariwemo ibyo bitwaye bukaba butarengeje m6",
+"img": []
+},
+{
+"t": "uburebure ntarengwa ntiburenga m8",
+"img": []
+},
+{
+"t": "A na B nibyo bisubizo by’ukuri",
+"img": []
+}
+],
+"a": 3
+},
+{
+"q": "Iyo romoruki iziritse ku kinyamitende, velomoteri n’amapikipiki bidafite akanyabiziga ko kuruhande uretse ikinyamitende na velomoteri bidafite umuyobozi, iyo uburumbarare bwayo cyangwa bw’ibyo yikoreye bituma itara ry’ikinyabiziga gikurura ritagaragara igihe bitagishoboka kubona neza muri m 200 bigomba kugaragazwa ku buryo bukurikira:",
+"img": [],
+"o": [
+{
+"t": "itara ryera cyangwa ry’umuhondo cyangwa risa n’icunga rihishije riri kuri rumoruki inyuma",
+"img": []
+},
+{
+"t": "itara ry’icyatsi cyangwa ry’umuhondo cyangwa risa n’icunga rihishije riri kuri rumoruki inyuma",
+"img": []
+},
+{
+"t": "A na B ni ibisubizo by’ukuri",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 0
+},
+{
+"q": "Ku kinyabiziga cyangwa ibinyabiziga bikururana igice kirenga ku biziga ntikigomba kurenga ibipimo bikurikira:",
+"img": [],
+"o": [
+{
+"t": "inyuma ni m 3 na cm 50",
+"img": []
+},
+{
+"t": "imbere ni m 1 na cm 70",
+"img": []
+},
+{
+"t": "A na B ni ibisubizo by’ukuri",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 0
+},
+{
+"q": "Iyo amatara y’ikinyabiziga agomba gucanwa kandi igihe imizigo isumba impera y’ikinyabiziga ho metero irenga igice gihera cy’imizigo kigaragazwa ku buryo bukurikira:",
+"img": [],
+"o": [
+{
+"t": "itara ritukura cyangwa akagarurarumuri ku mutuku ku manywa",
+"img": []
+},
+{
+"t": "agatambaro gatukura gafite nibura cm 50 z’uruhande mu ijoro",
+"img": []
+},
+{
+"t": "itara ry’umuhondo cyangwa akagarurarumuri k’umuhondo",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 3
+},
+{
+"q": "Iyo imizigo igizwe n’ibinyampeke, ikawa, ipamba idatonoye, ibishara, ibyatsi, ibishami cyangwa ubwatsi bw’amatungo bidahambiriye uretse amapaki afunze, ubugari bwayo bushobora kugera ku bipimo bikurikira:",
+"img": [],
+"o": [
+{
+"t": "m 2.50",
+"img": []
+},
+{
+"t": "m 2.75",
+"img": []
+},
+{
+"t": "m 3",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Uretse mu mijyi kuyindi mihanda yagenywe na minisiteri ushinzwe gutwara ibintu n’abantu, uburemere ntarengwa bwemewe ku binyabiziga bifatanye bifite imitambiko itatu ni:",
+"img": [],
+"o": [
+{
+"t": "toni 20",
+"img": []
+},
+{
+"t": "toni 16",
+"img": []
+},
+{
+"t": "toni 12",
+"img": []
+},
+{
+"t": "toni 10",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Buri modoka cyangwa buri romoruki ikuruwe n’iyo modoka bishobora kugira itara rituma umuyobozi yerekana ko yabonye ikimenyetso cy’uwitegura kumunyuraho. Iryo tara rifite amabara akurikira:",
+"img": [],
+"o": [
+{
+"t": "umuhondo",
+"img": []
+},
+{
+"t": "icyatsi kibisi",
+"img": []
+},
+{
+"t": "umweru",
+"img": []
+},
+{
+"t": "umutuku",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Ikinyabiziga cyangwa ibinyabiziga bikururana bifite imitambiko ibiri ikurikiranye mu bugari bwayo ni ukuvuga imitambiko yihindukiza kucyo ifungiyeho, uburebure bwabyo ntibugomba kurenza ibipimo bikurikira:",
+"img": [],
+"o": [
+{
+"t": "m11",
+"img": []
+},
+{
+"t": "m10",
+"img": []
+},
+{
+"t": "m7",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Bumwe muri ubu bwoko bwa feri ituma imodoka iguma aho iri uko yaba yikoreye kose ku muzamuko cyangwa ku gacuri bya 16%, imyanya ya feri igomba gufata igakomeza kwegera kuburyo bw’ibyuma niyo umuyobozi yaba atarimo:",
+"img": [],
+"o": [
+{
+"t": "feri yo guhagarara umwanya munini",
+"img": []
+},
+{
+"t": "feri y’urugendo",
+"img": []
+},
+{
+"t": "feri yo gutabara",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 0
+},
+{
+"q": "Utugarurarumuri turi mu mbavu z’ikinyabiziga tugomba kugira ibara rikurikira:",
+"img": [],
+"o": [
+{
+"t": "umweru",
+"img": []
+},
+{
+"t": "umuhondo",
+"img": []
+},
+{
+"t": "umutuku",
+"img": []
+},
+{
+"t": "Nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Romoruki zifite ubugari ntarengwa bwa cm 80 zishobora gushyirwaho akagarurarumuri kamwe gusa iyo zikuruwe n’ibinyabiziga bikurikira:",
+"img": [],
+"o": [
+{
+"t": "velomoteri",
+"img": []
+},
+{
+"t": "ipikipiki idafite akanyabiziga ku ruhande",
+"img": []
+},
+{
+"t": "amavatiri y’ifasi",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Amatara maremare y’ibara ryera cyangwa ry’umuhondo agomba, nijoro igihe ijuru rikeye, kumurika mu muhanda mu ntera ya m 100 nibura imbere y’ikinyabiziga, ariko ku binyabiziga bifite moteri itarengeje za sentimetero kibe 125 iyo ntera igira ibipimo bikurikira:",
+"img": [],
+"o": [
+{
+"t": "m200",
+"img": []
+},
+{
+"t": "m100",
+"img": []
+},
+{
+"t": "m85",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 3
+},
+{
+"q": "Iyo banyuze iruhande rw’inkomyi abanyamaguru bagomba gukikira banyuze mu muhanda, abayobozi bagomba gusiga umwanya ufite ubugari bwa m 1 nibura hagati yabo nayo. Iyo ibyo bidashobora kubahirizwa kandi umunyamaguru akaba anyura hafi yiyo nkomyi, umuyobozi agomba kuyikikira afite umuvuduko utarengeje ibipimo bikurikira:",
+"img": [],
+"o": [
+{
+"t": "km 10 mu isaha",
+"img": []
+},
+{
+"t": "km 20 mu isaha",
+"img": []
+},
+{
+"t": "km 30 mu isaha",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 3
+},
+{
+"q": "Guhagarara akanya gato no guhagarara akanya kanini bibujijwe cyane cyane aha hakurikira:",
+"img": [],
+"o": [
+{
+"t": "ku mihanda y’icyerekezo kimwe hose",
+"img": []
+},
+{
+"t": "mu ruhande ruteganye n’urwo ikindi kinyabiziga gihagazemo akanya gato cyangwa kanini",
+"img": []
+},
+{
+"t": "ku mihanda ibisikanirwamo, iyo ubugari bw’umwanya w’ibinyabiziga ugomba gutuma bibisikana butagifite m12",
+"img": []
+},
+{
+"t": "ibisubizo byose nibyo",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Amatara ndangambere n’aya ndanganyuma y’imodoka zitarengeje m 6 z’uburebure na m 2 z’ubugari habariwemo imitwaro kdi nta kinyabiziga kindi kiziritseho ashobora gusimburwa n’amatara akurikira, iyo ibyo binyabiziga bihagaze umwanya muto cyangwa munini mu nsisiro bibangikanye ku ruhande rw’umuhanda:",
+"img": [],
+"o": [
+{
+"t": "amatara magufi",
+"img": []
+},
+{
+"t": "amatara ndangaburumbarare",
+"img": []
+},
+{
+"t": "amatara yo guhagarara umwanya munini",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Iyo kuva bwije kugeza bukeye cyangwa bitewe nuko ibihe bimeze nk’igihe cy’igihu cyangwa cy’imvura bitagishoboka kubona neza muri m 200, imirongo y’ingabo z’igihugu zigendera kuri gahunda n’utundi dutsiko twose tw’abanyamaguru nk’imperekerane cyangwa udutsiko tw’abanyeshuri bari ku murongo bayobowe na mwarimu, iyo bagenda mu muhanda ku isonga hakaba hari abantu barenze umwe, bagaragzwa ku buryo bukurikira:",
+"img": [],
+"o": [
+{
+"t": "imbere ni itara ryera ritwariwe ku ruhande rw’ibumoso n’umuntu uri ku murongo w’imbere hafi y’umurongo ugabanya umuhanda mo kabiri",
+"img": []
+},
+{
+"t": "inyuma ni itara umuhondo ritwariwe ku ruhande rw’ibumoso n’umuntu uri ku murongo w’inyuma hafi y’umurongo ugabanya umuhanda mo kabiri",
+"img": []
+},
+{
+"t": "A na B ni ibisubizo by’ukuri",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 0
+},
+{
+"q": "Imizigo yikorewe n’amagare, velomoteri, amapikipiki, ibinyamitende by’ibiziga bitatu nibyo ibiziga bine bifite cyangwa bidafite moteri inyuma ntishobora kurenza ibipimo bikurikira:",
+"img": [],
+"o": [
+{
+"t": "cm 20",
+"img": []
+},
+{
+"t": "cm 30",
+"img": []
+},
+{
+"t": "cm 50",
+"img": []
+},
+{
+"t": "cm 60",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Itara ndanganyuma rigomba gushyirwa aha hakurikira:",
+"img": [],
+"o": [
+{
+"t": "ahagereye inguni y’ibumoso y’ikinyabiziga",
+"img": []
+},
+{
+"t": "ahagereye inguni y’iburyo bw’ikinyabiziga",
+"img": []
+},
+{
+"t": "inyuma kandi y’impera y’ibumoso bw’ikinyabiziga",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 0
+},
+{
+"q": "Nta tara na rimwe cyangwa utugarurarumuri bishobora kuba bifunze kuburyo igice cyabyo cyo hasi cyane kimurika kitaba kiri hasi ya cm 40 kuva ku butaka igihe ikinyabiziga kidapakiye ariko ibyo ntibikurikizwa ku matara akurikira:",
+"img": [],
+"o": [
+{
+"t": "amatara kamenabihu",
+"img": []
+},
+{
+"t": "amatara yo gusubira inyuma",
+"img": []
+},
+{
+"t": "A na B ni ibisubizo by’ukuri",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Iyo tumuritswe n’amatara y’urugendo y’i kinyabiziga utugarurarumuri tugomba n’ijoro, igihe ijuru rikeye kubonwa n’umuyobozi w’ikinyabiziga kiri mu ntera ikurikira:",
+"img": [],
+"o": [
+{
+"t": "metero 100",
+"img": []
+},
+{
+"t": "metero 150",
+"img": []
+},
+{
+"t": "metero 200",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Ibinyabiziga bigendeshwa na moteri, hatarimo velomoteri n’ibinyabiziga bidapakiye umuvuduko wabyo udashobora kurenga km 50 mu isaha ahateganye bigomba kuba bifite ibikoresho by’ihoni byumvikanira mu ntera ikurikira:",
+"img": [],
+"o": [
+{
+"t": "metero 200",
+"img": []
+},
+{
+"t": "metero 150",
+"img": []
+},
+{
+"t": "metero 100",
+"img": []
+},
+{
+"t": "metero 50",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Ahatari mu nsisiro ibyapa biburira n’ibyapa byo gutambuka mbere bigomba gushyirwa mu ntera ikurikira y’ahantu habyerekana:",
+"img": [],
+"o": [
+{
+"t": "metero 150 kugeza kuri 200",
+"img": []
+},
+{
+"t": "metero 100 kugeza kuri 150",
+"img": []
+},
+{
+"t": "metero 50 kugeza kuri 100",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 0
+},
+{
+"q": "Inkombe z’inzira nyabagendwa cyangwa z’umuhanda zishobora kugaragazwa n’ibikoresho ngarurarumuri. Ibyo bikoresho bigomba gushyirwaho ku buryo abagenzi babibona ku buryo bukurikira:",
+"img": [],
+"o": [
+{
+"t": "babona iburyo bwabo ibyibara ritukura cyangwa ibisa n’icunga rihishije",
+"img": []
+},
+{
+"t": "ibumoso babona iby’ibara ryera",
+"img": []
+},
+{
+"t": "A na B ni ibisubizo by’ukuri",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Ahatari mu nsisiro, umuyobozi wese ugenza ikinyabiziga kimwe cyangwa ibinyabiziga bikomatanye bifite uburemere ntarengwa bwemewe burenga ibiro 3500 cyangwa bifite uburebure bwite burenga metero 10 agomba, keretse iyo anyuze cyangwa agiye kunyura ku bindi binyabiziga, gusiga hagati y’ikinyabiziga cye n’iki muri imbere umwanya uhagije kugirango ibinyabiziga bimuhiseho bishobore kuhigobeka bidateje impanuka igihe bibaye ngombwa ariko ibyo ntibikurikizwa mu bihe bikurikira:",
+"img": [],
+"o": [
+{
+"t": "mu gihe ibigendera mu muhanda ari byinshi kimwe no mu duce tw'inzira nyabagendwa aho kunyuranaho bibujijwe",
+"img": []
+},
+{
+"t": "igihe ibigendera mu muhanda ari byinshi",
+"img": []
+},
+{
+"t": "mu duce tw’inzira nyabagendwa aho kunyuranaho bibujijwe",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 0
+},
+{
+"q": "Ibiziga by’ibinyabiziga bigendeshwa na moteri n’ibya velomoteri kimwe n’ibya romoruki zabyo bigomba kuba byambaye inziga zihagwa zifite amano n’ubujyakuzimu butari munsi ya milimetero imwe ku migongo yabyo yose nubudodo bwabyo ntibugire ahantu na hamwe bugaragara kandi ntibugire aho byacitse bikomeye mu mpande zabyo ariko ibyo ntibikurikizwa ku binyabiziga bikurikira:",
+"img": [],
+"o": [
+{
+"t": "ibinyabiziga bidapakiye kandi bitajya birenza umuvuduko wa km 25 mu isaha ahateganye",
+"img": []
+},
+{
+"t": "ibinyabiziga bya police bijya ahatarenga km 25 uvuye aho biba",
+"img": []
+},
+{
+"t": "A na B ni ibisubizo by’ukuri",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 0
+},
+{
+"q": "Amatara ndangacyerekezo agomba kuba agizwe n’ibintu bifashe ku rumuri rumyasa, biringaniye ku buryo bigira umubare utari igiharwe ku mpande z’imbere n’inyuma z’ikinyabiziga ayo matara aba afite amabara akurikira:",
+"img": [],
+"o": [
+{
+"t": "amatara y’imbere aba yera cyangwa ari umuhondo",
+"img": []
+},
+{
+"t": "ayinyuma aba atukura cyangwa asa n’icunga rihishije",
+"img": []
+},
+{
+"t": "A na B ni ibisubizo by’ukuri",
+"img": []
+},
+{
+"t": "ayinyuma aba asa n’icunga rihishije",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Amahoni y’ibinyabiziga bigendeshwa na moteri agomba kohereza ijwi ry’injyana imwe rikomeza kandi ridacengera amatwi ariko ibinyabiziga bikurikira bishobora kugira ihoni ridasanzwe ridahuye n’ibivuzwe haruguru:",
+"img": [],
+"o": [
+{
+"t": "ibinyabiziga ndakumirwa",
+"img": []
+},
+{
+"t": "ibinyabiziga bikora ku mihanda",
+"img": []
+},
+{
+"t": "ibinyabiziga bifite ubugari burenze m 2.10",
+"img": []
+},
+{
+"t": "A na B ni ibisubizo by’ukuri",
+"img": []
+}
+],
+"a": 3
+},
+{
+"q": "Icyapa kibuza kunyura kubindi binyabiziga byose uretse ibinyamitende ibiri n’amapikipiki adafite akanyabiziga ku ruhande gifite ibimenyetso by’amabara akurikira:",
+"img": [],
+"o": [
+{
+"t": "umweru n’umukara",
+"img": []
+},
+{
+"t": "umutuku n’umukara",
+"img": []
+},
+{
+"t": "ubururu",
+"img": []
+},
+{
+"t": "A na B ni ibisubizo by’ukuri",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Icyapa kivuga ko hatanyurwa mu byerekezo byombi kirangwa n’ubuso bw’ibara rikurikira:",
+"img": [],
+"o": [
+{
+"t": "umukara",
+"img": []
+},
+{
+"t": "umweru",
+"img": []
+},
+{
+"t": "ubururu",
+"img": []
+},
+{
+"t": "umutuku",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Ibinyabiziga bikurikira bigomba kugira ibikoresho by’ihoni byumvikanira mu ntera ya m 20:",
+"img": [],
+"o": [
+{
+"t": "amapikipiki",
+"img": []
+},
+{
+"t": "velomoteri",
+"img": []
+},
+{
+"t": "ibinyabiziga bigendeshwa na moteri bidapakiye",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Imirongo y’ingabo z’igihugu zigendera kuri gahunda n’utundi dutsiko twose tw’abanyamaguru nk’imperekerane cyangwa udutsiko tw’abanyeshuri iyo bitagishoboka kubona neza muri m200, bagaragazwa ni itara ryera imbere naho inyuma ni itara ry’umutuku ariko iyo uburebure bwiyo mirongo cyangwa bw’utwo dutsiko burenga m6 impande zatwo cyangwa zayo zigaragazwa ku buryo bukurikira:",
+"img": [],
+"o": [
+{
+"t": "itara rimwe cyangwa menshi yera",
+"img": []
+},
+{
+"t": "amatara menshi y’umuhondo",
+"img": []
+},
+{
+"t": "amatara menshi asa n’icunga rihishije",
+"img": []
+},
+{
+"t": "ibisubizo byose nibyo",
+"img": []
+}
+],
+"a": 3
+},
+{
+"q": "Amatara ndangambere na ndanganyuma y’imodoka zitarengeje m 6 z’uburebure na m 2 z’ubugari habariwemo imitwaro kandi nta kindi kinyabiziga kiziritseho ashobora gusimburwa n’amatara yo guhagarara umwanya munini iyo ibyo binyabiziga bihagaze umwanya muto cyangwa munini mu nsisiro bibangikanye ku ruhande rw’umuhanda. Ayo matara arangwa n’amabara akurikira:",
+"img": [],
+"o": [
+{
+"t": "umweru cyangwa umuhondo imbere",
+"img": []
+},
+{
+"t": "umutuku cyangwa umuhondo inyuma",
+"img": []
+},
+{
+"t": "A na B ni ibisubizo by’ukuri",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Amatara ndangaburumbarare agomba kubonwa nijoro igihe ijuru rikeye n’umuyobozi w’ikinyabiziga kiri mu ntera ya :",
+"img": [],
+"o": [
+{
+"t": "m 50 nibura",
+"img": []
+},
+{
+"t": "m 100",
+"img": []
+},
+{
+"t": "m 150",
+"img": []
+},
+{
+"t": "m 200 nibura",
+"img": []
+}
+],
+"a": 3
+},
+{
+"q": "Uretse ku byerekeye imihanda iromboreje y’ibisate byinshi n’imihanda yimodoka igice cy’umuhanda kiri hakurya y’umurongo mugari wera ucibwa ku muhanda ngo ugaragaze inkombe mpimbano zawo kigenewe ibi bikurikira:",
+"img": [],
+"o": [
+{
+"t": "guhagararwamo umwanya muto gusa",
+"img": []
+},
+{
+"t": "guhagararwamo umwanya munini gusa",
+"img": []
+},
+{
+"t": "guhagararwamo umwanya muto n’umunini",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Ibimenyetso by’agateganyo bigizwe n’imitemeri y’ibara risa n’icunga rihishije bishobora gusimbura ibi bikurikira:",
+"img": [],
+"o": [
+{
+"t": "imirongo yera irombereje idacagaguye gusa",
+"img": []
+},
+{
+"t": "imirongo yera irombereje idacagaguye n’icagaguye",
+"img": []
+},
+{
+"t": "imirongo icagaguye n’idacagaguye ibangikanye",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Iyo bitagishoboka kubona muri m 200 imodoka zikuruwe n’inyamaswa, ingorofani, inyamaswa zitwaye imizigo cyangwa zigenderwamo kimwe n’amatungo bigomba kurangwa na :",
+"img": [],
+"o": [
+{
+"t": "imbere ni itara ryera",
+"img": []
+},
+{
+"t": "imbere ni itara ry’umuhondo cyangwa risa n’icunga rihishije",
+"img": []
+},
+{
+"t": "inyuma ni itara rimwe ritukura",
+"img": []
+},
+{
+"t": "ibisubizo byose ni ukuri",
+"img": []
+}
+],
+"a": 3
+},
+{
+"q": "Uretse igihe hari amategeko yihariye akurikizwa muri ako karere ikinyabiziga cyose gihagaze umwanya muto cyangwa munini, iyo gihagaze mu mwanya wo kuruhande wagenewe abanyamaguru, kugirango bashobore kugenda batagombye kunyura mu muhanda, umuyobozi agombye kubasigira akayira gafite byibura ibipimo bikurikira by’ubugari:",
+"img": [],
+"o": [
+{
+"t": "m 1",
+"img": []
+},
+{
+"t": "m 2",
+"img": []
+},
+{
+"t": "m 0.5",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 0
+},
+{
+"q": "Icyapa cyerekana ahantu hagenewe guhagararwamo n’imodoka nini zagenewe gutwara abantu cyirangwa n’ubuso bw’amabara akurikira:",
+"img": [],
+"o": [
+{
+"t": "ubururu",
+"img": []
+},
+{
+"t": "umweru",
+"img": []
+},
+{
+"t": "umutuku",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 3
+},
+{
+"q": "Icyapa cyerekana ko inzira giteyeho mu ntangiriro idakomeza kigaragazwa n’ikirango (ikimenyetso) cy’amabara akurikira:",
+"img": [],
+"o": [
+{
+"t": "umukara n’umutuku",
+"img": []
+},
+{
+"t": "umukara n’umweru",
+"img": []
+},
+{
+"t": "umweru n’umutuku",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 2
+},
+{
+"q": "Buri modoka yagenewe gutwara abantu, ariko umubare wabo ntarengwa ukaba munsi ya 6 umuyobozi abariwemo igomba kugira imikandara yo kurinda ibyago igenewe aba bakurikira:",
+"img": [],
+"o": [
+{
+"t": "umuyobozi",
+"img": []
+},
+{
+"t": "umugenzi wicaye ku ntebe y’imbere",
+"img": []
+},
+{
+"t": "ishobora no kugira imikandara kuzindi ntebe z’inyuma",
+"img": []
+},
+{
+"t": "ibisubizo byose ni ukuri",
+"img": []
+}
+],
+"a": 3
+},
+{
+"q": "Usibye ibinyabiziga by'ingabo z'Igihugu, Ikinyabiziga kigendeshwa na moteri kiriho ibyuma ntamenwa cyangwa ikindi cyose gituma gikoreshwa mu gutera cyangwa mu kwitabara ntigishobora kugenda mu nzira nyabagendwa kidafite uruhushya rwihariye. Urwo ruhushya rutangwa naba bakurikira:",
+"img": [],
+"o": [
+{
+"t": "police y’igihugu",
+"img": []
+},
+{
+"t": "minisitiri ushinzwe gutwara abantu n’ibintu",
+"img": []
+},
+{
+"t": "minisitiri w’ingabo",
+"img": []
+},
+{
+"t": "ikigo cy’igihugu gishinzwe imisoro n’amahoro.",
+"img": []
+}
+],
+"a": 1
+},
+{
+"q": "Iyo umukumbi ugizwe n’amatungo maremare arenze ane cyangwa amatungo magufi arenze atandatu mu nzira nyabagendwa iyo hatakibona neza kuburyo umuyobozi abona muri m 200 ugomba kugaragazwa kuburyo bukurikira:",
+"img": [],
+"o": [
+{
+"t": "itara ry’urumuri rwera cyangwa rusa n’icunga rihishije imbere y’umukumbi",
+"img": []
+},
+{
+"t": "itara ry’urumuri rutukura cyangwaumuhondo ritwawe inyuma y’umukumbi",
+"img": []
+},
+{
+"t": "A na B ni ibisubizo by’ukuri",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 3
+},
+{
+"q": "Ibinyabiziga biherekeranyije mu butumwa ntibishobora gutonda uburebure burenga umurongo wa m 500. Iyi bibaye bityo ibinyabiziga biherekeranye mu butumwa bishobora kugabanwamo amatsinda atonze umurongo atarengeje m 50 z’uburebure kdi hagati yayo hakaba byibura m 50 ariko ibyo ntibikurikizwa kubinyabiziga bikurikira:",
+"img": [],
+"o": [
+{
+"t": "ibinyabiziga bya police biherekeranyije",
+"img": []
+},
+{
+"t": "ibinyabiziga by’abasirikare biherekeranyije mu nsisiro",
+"img": []
+},
+{
+"t": "A na B ni ibisubizo by’ukuri",
+"img": []
+},
+{
+"t": "nta gisubizo cy’ukuri kirimo",
+"img": []
+}
+],
+"a": 1
 }
 ];
