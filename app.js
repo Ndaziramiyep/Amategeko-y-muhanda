@@ -52,4 +52,118 @@
     return img;
   }
 
+  function startRun(indexes) {
+    order = indexes;
+    pos = 0;
+    correct = 0;
+    wrong = [];
+    updateCounters();
+    show("quiz");
+    renderQuestion();
+  }
+
+  function renderQuestion() {
+    answered = false;
+    const q = QUESTIONS[order[pos]];
+
+    $("progressText").textContent = `Question ${pos + 1} / ${order.length}`;
+    const done = pos;
+    $("percentText").textContent = done ? `${Math.round((correct / done) * 100)}% correct` : "";
+    $("progressBar").style.width = `${(pos / order.length) * 100}%`;
+
+    $("questionText").textContent = q.q;
+
+    const imgs = $("questionImages");
+    imgs.innerHTML = "";
+    q.img.forEach((name) => imgs.appendChild(imageEl(name)));
+
+    const opts = $("options");
+    opts.innerHTML = "";
+    q.o.forEach((opt, i) => {
+      const btn = document.createElement("button");
+      btn.className = "option";
+      btn.type = "button";
+      btn.dataset.index = i;
+
+      const letter = document.createElement("span");
+      letter.className = "letter";
+      letter.textContent = LETTERS[i];
+
+      const body = document.createElement("span");
+      body.className = "body";
+      if (opt.t) body.appendChild(document.createTextNode(opt.t));
+      opt.img.forEach((name) => body.appendChild(imageEl(name)));
+
+      btn.append(letter, body);
+      btn.addEventListener("click", () => choose(i));
+      opts.appendChild(btn);
+    });
+
+    const fb = $("feedback");
+    fb.className = "feedback hidden";
+    fb.textContent = "";
+
+    const next = $("nextBtn");
+    next.disabled = true;
+    next.textContent = pos === order.length - 1 ? "See results" : "Next →";
+  }
+
+  function choose(i) {
+    if (answered) return;
+    answered = true;
+
+    const qi = order[pos];
+    const q = QUESTIONS[qi];
+    const buttons = $("options").querySelectorAll(".option");
+
+    buttons.forEach((b, k) => {
+      b.disabled = true;
+      if (k === q.a) b.classList.add("correct");
+      else if (k === i) b.classList.add("wrong");
+      else b.classList.add("dim");
+    });
+
+    const fb = $("feedback");
+    if (i === q.a) {
+      correct++;
+      fb.className = "feedback ok";
+      fb.textContent = "✔ Ni byo! Correct answer.";
+    } else {
+      wrong.push(qi);
+      const ans = q.o[q.a];
+      fb.className = "feedback bad";
+      fb.textContent = `✘ Si byo. The correct answer is ${LETTERS[q.a]})` + (ans.t ? ` ${ans.t}` : " (see the highlighted option)");
+    }
+
+    updateCounters();
+    $("nextBtn").disabled = false;
+    $("nextBtn").focus();
+    save(pos + 1);
+  }
+
+  function next() {
+    if (!answered) return;
+    pos++;
+    if (pos >= order.length) finish();
+    else renderQuestion();
+  }
+
+  function finish() {
+    clearSaved();
+    const total = correct + wrong.length;
+    const pct = total ? Math.round((correct / total) * 100) : 0;
+    $("scoreText").textContent = `${correct} / ${total} (${pct}%)`;
+    $("scoreDetail").textContent = total < order.length
+      ? `You answered ${total} of ${order.length} questions. Wrong answers: ${wrong.length}.`
+      : `Wrong answers: ${wrong.length}.`;
+    $("reviewWrongBtn").classList.toggle("hidden", wrong.length === 0);
+    $("progressBar").style.width = "100%";
+    show("result");
+  }
+
+  function allIndexes() {
+    const idx = QUESTIONS.map((_, i) => i);
+    return $("shuffleToggle").checked ? shuffle(idx) : idx;
+  }
+
 })();
