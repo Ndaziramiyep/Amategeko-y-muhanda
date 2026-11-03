@@ -125,9 +125,9 @@
     answered = false;
     const q = QUESTIONS[order[pos]];
 
-    $("progressText").textContent = `Question ${pos + 1} / ${order.length}`;
+    $("progressText").textContent = `Ikibazo cya ${pos + 1} / ${order.length}`;
     const done = pos;
-    $("percentText").textContent = done ? `${Math.round((correct / done) * 100)}% correct` : "";
+    $("percentText").textContent = done ? `Watsinze ${Math.round((correct / done) * 100)}%` : "";
     $("progressBar").style.width = `${(pos / order.length) * 100}%`;
 
     $("questionText").textContent = q.q;
@@ -167,7 +167,7 @@
 
     const next = $("nextBtn");
     next.disabled = true;
-    next.textContent = pos === order.length - 1 ? "See results" : "Next →";
+    next.textContent = pos === order.length - 1 ? "Reba amanota" : "Ibikurikira →";
 
     startTimer();
   }
@@ -194,13 +194,13 @@
     if (i === q.a) {
       correct++;
       fb.className = "feedback ok";
-      fb.textContent = "✔ Ni byo! Correct answer.";
+      fb.textContent = "✔ Ni byo! Igisubizo cyawe ni cyo.";
     } else {
       wrong.push(qi);
       const ans = q.o[q.a];
       fb.className = "feedback bad";
-      const prefix = i === -1 ? "⏱ Time's up!" : "✘ Si byo.";
-      fb.textContent = `${prefix} The correct answer is ${LETTERS[q.a]})` + (ans.t ? ` ${ans.t}` : " (see the highlighted option)");
+      const prefix = i === -1 ? "⏱ Igihe kirarangiye!" : "✘ Si byo.";
+      fb.textContent = `${prefix} Igisubizo nyacyo ni ${LETTERS[q.a]})` + (ans.t ? ` ${ans.t}` : " (reba igisubizo kigaragara mu ibara ry'icyatsi)");
     }
 
     updateCounters();
