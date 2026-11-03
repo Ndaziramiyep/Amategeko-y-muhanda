@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Amategeko y'Umuhanda – Ikizamini</title>
+  <script>
+    // Light by default; apply a saved dark choice before the page paints
+    try { if (localStorage.getItem("amategeko-theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch (e) {}
+  </script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,6 +21,7 @@
       <h1>Amategeko y'Umuhanda</h1>
     </div>
     <div class="stats">
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Uburyo bw'umwijima" title="Uburyo bw'umwijima">🌙</button>
       <span class="pill correct-pill" id="correctPill">✔ <b id="correctCount">0</b></span>
       <span class="pill wrong-pill" id="wrongPill">✘ <b id="wrongCount">0</b></span>
     </div>

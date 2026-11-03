@@ -1,6 +1,7 @@
 (() => {
   const LETTERS = ["a", "b", "c", "d"];
   const STORE_KEY = "amategeko-quiz-progress";
+  const THEME_KEY = "amategeko-theme";
   const QUIZ_LENGTH = 20;   // questions per quiz
   const TIME_LIMIT = 60;    // seconds per question
   const AUTO_NEXT_DELAY = 2000; // ms to show the answer after time runs out
@@ -326,6 +327,24 @@
     show("start");
   });
   $("reviewWrongBtn").addEventListener("click", () => startRun(shuffle(wrong.slice())));
+
+  // Light / dark theme switch (light is the default)
+  function applyTheme(dark) {
+    if (dark) document.documentElement.dataset.theme = "dark";
+    else delete document.documentElement.dataset.theme;
+    const btn = $("themeToggle");
+    const label = dark ? "Uburyo bw'urumuri" : "Uburyo bw'umwijima";
+    btn.textContent = dark ? "☀️" : "🌙";
+    btn.title = label;
+    btn.setAttribute("aria-label", label);
+  }
+  applyTheme(document.documentElement.dataset.theme === "dark");
+  $("themeToggle").addEventListener("click", () => {
+    const dark = document.documentElement.dataset.theme !== "dark";
+    applyTheme(dark);
+    replay($("themeToggle"), "spin");
+    try { localStorage.setItem(THEME_KEY, dark ? "dark" : "light"); } catch (e) { /* ignore */ }
+  });
 
   // Keyboard: a-d / 1-4 to answer, Enter to go next
   document.addEventListener("keydown", (e) => {
